@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pertemuan 7-Table colgroup</title>
+</head>
+
+<body>
+    <h2>Multiple Col Elements</h2>
+    <p>Menambahkan multiple element kolom dalam col grup.</p>
+    <table border="5">
+        <!-- Tag col grup digunakan untuk mengatur properti kolom tabel secara sekaligus bukan per sel atau td. -->
+         <!-- Col grup digunakan untuk warna background kolom, lebar kolom, menyembunyikan kolom, atau styling kolom tertentu sekaligus. -->
+          <!-- Tag col digunakan untuk menandai kolom yang sedang diatur. -->
+        <colgroup>
+            <col span="3" style="background-color: aqua;">
+            <col span="1" style="background-color:bisque">
+            <col style="background-color: brown;">
+        </colgroup>
+        <tr>
+            <th>Senin</th>
+            <th>Selasa</th>
+            <th>Rabu</th>
+            <th>Kamis</th>
+            <th>Jumat</th>
+        </tr>
+        <tr>
+            <td>Bahasa Indonesia
+            </td>
+            <td>Olahraga</td>
+            <td>Matematika</td>
+            <td>IPA</td>
+            <td>Seni Prakarya</td>
+        </tr>
+        <tr>
+            <td>Matematika</td>
+            <td>IPA</td>
+            <td>Bahasa Inggris</td>
+            <td>Agama</td>
+            <td>Olahraga</td>
+        </tr>
+        <tr>
+            <td>IPA</td>
+            <td>Seni Budaya</td>
+            <td>Bahasa Indonesia</td>
+            <td>Matematika</td>
+            <td>Bahasa Inggris</td>
+        </tr>
+        <tr>
+            <td>Bahasa Inggris</td>
+            <td>Agama</td>
+            <td>Olahraga</td>
+            <td>Seni Prakarya</td>
+            <td>IPA</td>
+        </tr>
+        <tr>
+            <td>Pancasila</td>
+            <td>Olahraga</td>
+            <td>Seni Budaya</td>
+            <td>Agama</td>
+            <td>Bahasa Indonesia</td>
+        </tr>
+    </table>
+    <table border="10">
+        <colgroup>
+        <col span="2" style="background-color: aqua;">
+        <col span="3" style="visibility: collapse;">
+        </colgroup>
+        <tr>
+            <th>Senin</th>
+            <th>Selasa</th>
+            <th>Rabu</th>
+            <th>Kamis</th> 
+            <th>Jumat</th>
+            <th>Sabtu</th>
+            <th>Minggu</th>
+        </tr>
+        <tr>
+            <td> 1 </td>
+            <td> 2 </td>
+            <td> 3 </td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>   
+            <td>12</td> 
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+    </table>
+</body>
+
+</html>
