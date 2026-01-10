@@ -4,6 +4,30 @@
 <head>
     <title>Penerapan Id dan Class</title>
     <style>
+        #NavBar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+
+        }
+        
+
+        
+        #Menu a {
+            display: block;
+            color: white;
+            padding: 16px;
+            text-align: center;
+            text-decoration: none;
+        }
+        #Menu a:hover {
+            background-color: rgb(86, 86, 245);
+            color:white
+        }
     </style>
 </head>
 
@@ -14,23 +38,23 @@
     </header>
     <section>
         <nav>
-            <ul>
-                <li>
+            <ul id="NavBar">
+                <li id="Menu">
                     <a href="#Jogja">Jogja</a>
                 </li>
-                <li>
+                <li id="Menu">
                     <a href="#Jakarta">Jakarta</a>
                 </li>
-                <li>
+                <li id="Menu">
                     <a href="#Cilacap">Cilacap</a>
                 </li>
-                <li>
+                <li id="Menu">
                     <a href="#Semarang">Semarang</a>
                 </li>
-                <li>
+                <li id="Menu">
                     <a href="#Surabaya">Surabaya</a>
                 </li>
-                <li>
+                <li id="Menu">
                     <a href="#Solo">Solo</a>
                 </li>
             </ul>

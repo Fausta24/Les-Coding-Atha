@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Id dalam JavaScript</title>
+</head>
+
+<body>
+    <h2>Menggunakan Atribut Id Dalam javaScript</h2>
+    <p>JavaScript dapat mengakses element dengan spesifik id menggunakan method getElementById()</p>
+    <h1 id="Judul">Helo World</h1>
+    <!-- <h2 id="Judul">Contoh</h2> -->
+    <button onclick="berubah()">
+        Berubah
+    </button>
+    <button onclick="ubahnama()">Change</button>
+    <script>
+        function berubah() {
+            document.getElementById("Judul").innerHTML = "Selamat Datang di Dunia JavaScript";
+        }
+        function ubahnama() {
+            document.getElementById("Judul").innerHTML = "Helo World";
+        }
+    </script>
+
+</body>
+
+</html>
