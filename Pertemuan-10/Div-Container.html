@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<head>
+    <title>Penggunaan Div Sebagai Container</title>
+    <style>
+        div {
+            width: 300px;
+            margin: auto;
+            background-color: tomato;
+        }
+
+        div.mycontainer {
+            width: 100%;
+            overflow: auto;
+            display: inline-block;
+        }
+
+        div.mycontainer div {
+            width: 33%;
+            float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Memposisikan Element Div Ke-Tengah Halaman Browser</h1>
+    <p>Element div sering digunakan untuk mengelompokan bagian-bagian dari sebuah halaman web.</p>
+
+    <div>
+        <h2>Jakarta</h2>
+        <p>Jakarta adalah ibukota Negara Indonesia</p>
+        <p>Jakarta memiliki populasi manusia sebesar 11 juta jiwa.</p>
+    </div>
+    <h1>Multiple Div Element</h1>
+    <p>Kita bisa membuat banyak pembungkus div di halaman yang sama. Contohnya :</p>
+    <div class="mycontainer">
+        <div style="background-color: antiquewhite;">
+            <h2>London</h2>
+            <p>London adalah ibukota dari Inggris</p>
+            <p>London memiliki populasi manusia sebesar 13 juta jiwa.</p>
+        </div>
+        <div style="background-color: bisque;">
+            <h2>Tokyo</h2>
+            <p>Tokyo adalah ibukota dari Jepang</p>
+            <p>Tokyo memiliki populasi manusia sebesar 37 juta jiwa.</p>
+        </div>
+        <div style="background-color: burlywood;">
+            <h2>New York</h2>
+            <p>New York adalah kota terbesar di Amerika Serikat</p>
+            <p>New York memiliki populasi manusia sebesar 8 juta jiwa.</p>
+        </div>
+    </div>
+</body>
+
+</HTML>

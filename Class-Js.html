@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    
+    <head>
+        <title>Penerapan Class Dalam HTML</title>
+    </head>
+
+    <body>
+        <h2>
+            Penggunaan Atribut Class Dalam HTML
+        </h2>
+        <p>
+            Klik tombol untuk menghilangkan dan menamilkan semua element dengan class "city"
+        </p>
+        <button onclick="hide()">Hide City</button>
+        <button onclick="show()">Show City</button>
+        <h2 class="city">London</h2>
+        <p>London adalah ibukota dari Inggris.</p>
+        <h2 class="city">Tokyo</h2>
+        <p>Tokyo adalah ibukota dari Jepang.</p>
+        <h2 class="city">New York</h2>
+        <p>New York adalah kota terbesar di Amerika Serikat.</p>
+        <script>
+            function hide() {
+                var x = document.getElementsByClassName("city");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+            }
+
+            function show() {
+                var x = document.getElementsByClassName("city");
+                for (var i = 0; i < x.length; i++) {
+                    x[i].style.display = "block";
+                }
+            }
+        </script>
+    </body>
+
+</head>
