@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        HTML Form Atribut
+    </title>
+</head>
+
+<body>
+    <h2>HTML Form Atribut
+    <hr>
+    </h2>
+    <p>
+        Kali ini kita akan membahas beberapa atribut penting pada elemen form di HTML.
+    </p>
+    <ol>
+        <li>Action Atribut</li>
+        <p>Action atribut sendiri menentukan tindakan yang akan dijalankan saat form dikirimkan. Biasanya, data form
+            dikirim ke sebuah berkas di server ketika pengguna mengklik tombol submit.
+            Contoh penggunaan atribut action adalah :
+        </p>
+        <form action="/Pertemuan-12/coba.html" target="_self">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" />
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" />
+            </br>
+            <input type="submit" value="Submit" />
+        </form>
+        <li>Atribut Target</li>
+        <p>Atribut target menentukan dimana respon yang diterima setelah mengirimkan form akan ditampilkan.
+            Atribut target dapat memiliki beberapa nilai, diantaranya:
+        </p>
+        <table border="50">
+            <tr>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>_blank</td>
+                <td>Respons ditampilkan di jendela atau tab baru.</td>
+            </tr>
+            <tr>
+                <td>_self</td>
+                <td>Respons ditampilkan di jendela saat ini.</td>
+            </tr>
+            <tr>
+                <td>_parent</td>
+                <td>Respons ditampilkan di frame induk.</td>
+            </tr>
+            <tr>
+                <td>_top</td>
+                <td>Respons ditampilkan diseluruh badan jendela.</td>
+            </tr>
+            <tr>
+                <td>Framename</td>
+                <td>Respons ditampilkan di iframe bernama </td>
+            </tr>
+        </table>
+        <li>Atribut Method</li>
+        <p>Atribut method menentukan metode HTTP yang akan digunakan saat mengirimkan data form.
+            Data form dapat dikirim sebagai variabel URL (dengan method="get") atau sebagai transaksi HTTP POST (dengan method post.)
+            Metode HTTP default saat mengirimkan data form adalah GET.
+        </p>
+    </ol>
+</body>
+
+</html>
