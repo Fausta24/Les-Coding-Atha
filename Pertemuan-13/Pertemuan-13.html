@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form Element</title>
+    </head>
+    <body>
+        <h2>HTML Form ELement</h2>
+        <p>Menjelaskan perbedaan element html yang digunakan di dalam teks form.
+            Element form html dapat membungkus lebih dari satu element.
+        </p>
+        <ul>
+            <li>input</li>
+            <p>Element input adalah yang paling sering digunakan dalam pembuatan form di html.
+                Element input dapat ditampilkan dalam berbagai cara, tergantung dari atribut type nya.
+                Contoh : 
+            </p>
+            <form>
+                <label for="fname">Nama Depan</label>
+                <br>
+                <input type="radio" name="fname" id="fname" />
+            </form>
+            <li>label</li>
+            <p>Element label mendefinisikan label untuk beberapa element form.
+                Element label berguna bagi pengguna screen reader karena screen reader akan membacakan label ketika pengguna memfokuskan element input.
+                Element label juga membantu pengguna yang kesulitan mengklik area yang sangat kecil (seperti tombol radio aatau kotak centang).
+                Atribut for pada tag label harus sama dengan atribut id pada element input untuk menghubungkan keduanya.
+            </p>
+            <li>select</li>
+            <p>Element select mendefinisikan drop down list.
+                Contoh :
+            </p>
+            <form>
+                <label for="mobil">Daftar Mobil :</label>
+                <select name="mobil" id="mobil" size="4" multiple>
+                    <option value="#">Silahkan pilih mobil anda</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="abc">Toyota</option>
+                    <option value="suzuki">Suzuki</option>
+                    <option value="daihatsu">Daihatsu</option>
+                    <option value="audi">Audi</option>
+
+
+                </select>
+                <input type="submit" value="Submit" />
+            </form>
+            <p>Element option mendefinisikan daftar pilihan yang bisa dipilih.
+                Secara default, item pertama di dalam dropdown list akan dipilih.
+                Untuk menentukan opsi yang dipilih sebelumnya, tambahkan atribut selected pada element option.
+            </p>
+            <li>textarea</li>
+            <p>Textarea mendefinisikan bidang yang dapat menginputkan banyak baris data.</p>
+            <form>
+                <label for="alamat">Alamat rumah</label>
+                <textarea name="alamat" id="alamat" rows="4" cols="30"></textarea>
+                <input type="submit" value="Masukkan data"/>
+            </form>
+            <li>button</li>
+            <p>Element button mendefinisikan tombol yang dapat di-klik.
+                Contoh :
+            </p>
+            <button type="button" onclick="alert('hello world')">Saya</button>
+
+            <li>fieldset</li>
+            <li>legend</li>
+            <li>datalist</li>
+            <li>output</li>
+            <li>option</li>
+            <li>optgroup</li>
+        </ul>
+        
+        
+    </body>
+</html>
