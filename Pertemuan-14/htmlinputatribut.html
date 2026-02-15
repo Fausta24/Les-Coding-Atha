@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Input Atribut</title>
+    </head>
+    <body>
+        <h2>HTML Input Atribut</h2>
+        <p>Kali ini kita akan menjelaskan perbedaan atribut untuk element input html.</p>
+        <ol>
+            <li>Value atribut
+                <p>Value atribut pada element input menentukan nilai awal untuk sebuah bidang input.</p>
+                <p>Contoh :
+                    <form>
+                        <label for="fname">Nama Depan</label>
+                        <input type="text" name="fname" id="fname" value="Theo"/>
+                        <br>
+                        <label for="lname">Nama Belakang</label>
+                        <input type="text" name="lname" id="lname" />
+                        <br>
+                        <input type="submit" value="Submit" />
+                        
+                    </form>
+                </p>
+            </li>
+            <li>Readonly atribut
+                <p>Atribut readonly pada element input menyatakan bahwa bidang input bersifat <b>hanya dibaca</b>
+                Bidang input yang hanya dibaca tidak dapat diubah (namun pengguna tetap bisa menavigasi, menyorot, menyalin text).
+            Nilai dari bidang input yang hanya dibaca, akan dikirimkan saat formulir di submit.</p>
+            <p>Contoh:</p>
+            <form>
+                <label for="fname">Nama Depan</label>
+                <input type="text" name="fname" id="fname" value="Theo" readonly />
+                <br>
+                <label for="lname">Nama Belakang</label>
+                <input type="text" name="lname" id="lname" />
+                <br>
+                <input type="submit" value="Submit" />
+            </form>
+
+            </li>
+            <li>Disabled
+                <p>Atribut disabled pada element input menyatakan bahwa bidang input harus di non-aktifkan.
+                    Bidang input yang dinon-aktifkan, tidak dapat digunakan dan tidak dapat di-klik. Nilai dari bidang input yang dinon-aktifkan, tidak akan dikirimkan saat formulir di submit.
+                </p>
+            <form>
+                <label for="fullname">Nama Lengkap</label>
+                <input type="text" name="fullname" id="fullname" value="Theo Town" disabled />
+                <br>
+                <label for="sekul">Sekolah</label>
+                <input type="text" name="sekul" id="sekul" placeholder="SD Negeri 1 Saranjana"/>
+                <br>
+                <input type="submit" value="Submit" />
+            </form>
+            </li>
+            <li>Required
+                <p>Atribut required menyatakan bahwa bidang input harus diisi sebelum mengirimkan formulir.
+                    Atribut required bekerja pada tipe input berikut : <b>Text, search, url, tell, email, password, date-picker, number, checkbox, radio, dan juga file.</b>
+                </p>
+                <form>
+                    <label for="ename">Email</label>
+                    <input type="email" name="ename" id="ename" required />
+                    <br>
+                    <label for="pwname">Password</label>
+                    <input type="password" name="pwname" id="pwname" required />
+                    <br>
+                    <input type="submit" value="Submit" />
+                </form>
+            </li>
+        </ol>
+    </body>
+</html>
